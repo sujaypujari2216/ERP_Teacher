@@ -11,7 +11,7 @@ export class SubjectGroupComponent implements OnInit {
   constructor(private datatableservice:DatatableService) { }
 
   ngOnInit(): void {
-    this.datatableservice.initTable("academics");
+    this.datatableservice.initTable("Subject Group");
 
   }
 

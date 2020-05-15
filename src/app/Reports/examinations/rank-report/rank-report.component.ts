@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DatatableService } from 'src/app/shared/datatableservice/datatable.service';
 
 @Component({
   selector: 'app-rank-report',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RankReportComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dt:DatatableService) { }
 
   ngOnInit(): void {
+    this.dt.initTable("Rank Report");
   }
 
 }
